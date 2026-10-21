@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swetha E | AI &amp; Data Science Portfolio</title>
+<meta name="description" content="Explore the portfolio of Swetha E, an Artificial Intelligence and Data Science student at Panimalar Engineering College, showcasing projects, technical interests, and creative technology work.">
+<meta property="og:title" content="Swetha E | AI & Data Science Portfolio">
+<meta property="og:description" content="AI & Data Science student at Panimalar Engineering College.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%238B7CFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070C;--bg2:#0E0E17;--surface:rgba(255,255,255,.03);--border:rgba(255,255,255,.1);--text:#F4F5F8;--muted:#9A9FAD;--accent:#8B7CFF;--accent2:#5B6CFF;--live:#34D399;--alert:#F87171;--h:'Space Grotesk',system-ui,sans-serif;--b:'Inter',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.65 var(--b);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60vw 50vh at 90% 85%,rgba(110,70,255,.28),transparent 70%),radial-gradient(40vw 50vh at -5% 40%,rgba(91,108,255,.16),transparent 70%)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 40px);margin:0 auto}
+section{padding:88px 0}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.06em;color:var(--accent)}
+h1,h2,h3{font-family:var(--h);font-weight:600;letter-spacing:-.03em;line-height:1.08;margin:0}
+h2{font-size:clamp(28px,4.4vw,46px);margin:10px 0 36px;max-width:18ch}
+p{margin:0;color:var(--muted)}
+.glass{background:var(--surface);border:1px solid var(--border);border-radius:14px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(7,7,12,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font:600 16px var(--h);letter-spacing:.02em}
+.orb{width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c4baff,var(--accent) 55%,#4a3bd6);box-shadow:0 0 18px rgba(139,124,255,.8)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav a.l{font-size:14px;color:var(--muted);position:relative;padding:6px 0;transition:color .2s}
+nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+nav a.l:hover,nav a.l.on{color:var(--text)}nav a.l:hover::after,nav a.l.on::after{transform:scaleX(1)}
+.chip{font:500 11px var(--m);color:var(--live);border:1px solid var(--border);border-radius:99px;padding:4px 10px;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--live);box-shadow:0 0 8px var(--live);display:inline-block}
+.dot.r{background:var(--alert);box-shadow:none}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--b);border-radius:99px;padding:10px 20px;border:1px solid rgba(255,255,255,.3);background:transparent;color:var(--text);cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
+.btn:hover{background:rgba(255,255,255,.08);transform:translateY(-1px)}
+.btn.w{background:#fff;color:#07070C;border-color:#fff}.btn.w:hover{background:#e8e8f0}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.txt{font-size:14px;color:var(--text);padding:10px 4px}.txt:hover{color:var(--accent)}
+.burger{display:none;background:none;border:1px solid var(--border);color:var(--text);border-radius:8px;width:40px;height:40px;cursor:pointer}
+.right{display:flex;align-items:center;gap:12px}
+/* hero */
+.hero{padding:72px 0 40px}
+.hgrid{display:grid;gap:28px;grid-template-columns:1fr}
+.hero h1{font-size:clamp(40px,7.4vw,84px);letter-spacing:-.04em}
+.hero h1 span{display:block}
+.g1{background:linear-gradient(180deg,#fff,#b9bcc8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g2{color:#6f7384;font-size:.62em}
+.hero .side{display:flex;flex-direction:column;gap:22px;max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.stage{position:relative;margin:72px auto 0;padding:0 0 70px}
+.win{max-width:640px;margin:0 auto;background:rgba(14,14,23,.85);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.wbar{display:flex;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--border);font:12px var(--m);color:var(--muted)}
+.wbar b{margin-left:auto;font-weight:400}
+.wbody{padding:16px;display:grid;gap:12px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{height:58px;border-radius:8px;border:1px solid var(--border);padding:6px 8px;font:11px var(--m);color:#aab;display:flex;align-items:flex-end}
+.tile:nth-child(1){background:linear-gradient(135deg,#2a1d6b,#150f35)}.tile:nth-child(2){background:linear-gradient(135deg,#1c3a78,#0f1c3d)}.tile:nth-child(3){background:linear-gradient(135deg,#4b2a8c,#22123f)}
+.insight{background:rgba(139,124,255,.08);border:1px solid rgba(139,124,255,.25);border-radius:10px;padding:14px;display:grid;gap:8px}
+.bub{font-size:13px;padding:8px 12px;border-radius:12px;max-width:85%;color:var(--text)}
+.bub.u{background:rgba(255,255,255,.07);justify-self:end}.bub.a{background:rgba(139,124,255,.18)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font:11px var(--m);color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:4px 10px}
+.fl{position:absolute;width:210px;padding:14px;font-size:13px;background:rgba(10,10,16,.92);border:1px solid var(--border);border-radius:10px;transition:transform .2s ease-out;animation:bob 6s ease-in-out infinite}
+.fl .mono{display:block;margin-bottom:6px;font-size:10px}
+.fl.a{left:0;top:70px}.fl.b{right:0;top:150px;animation-delay:-2s}.fl.c{left:calc(50% - 150px);bottom:0;width:300px;animation-delay:-4s}
+.fl.b p{font:11px/1.8 var(--m);color:var(--text)}
+@keyframes bob{50%{translate:0 -6px}}
+.down{display:block;width:fit-content;margin:30px auto 0;font:11px var(--m);color:var(--muted)}
+/* about / cards */
+.three{display:grid;gap:18px;grid-template-columns:1fr;margin-top:40px;position:relative}
+.card{padding:24px;transition:border-color .25s,box-shadow .25s}
+.card:hover{border-color:rgba(139,124,255,.5);box-shadow:0 0 28px rgba(139,124,255,.12)}
+.card h3{font-size:19px;margin:10px 0}
+.lead{max-width:68ch;font-size:17px}
+.line{height:2px;background:linear-gradient(90deg,var(--accent),transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.2s}
+.in .line{transform:scaleX(1)}
+/* skills */
+.legend{display:flex;gap:18px;font:12px var(--m);color:var(--muted);margin:-14px 0 24px}
+.sg{display:grid;gap:18px;grid-template-columns:1fr}
+.sg svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{font-size:13px;padding:5px 12px;border-radius:99px;border:1px solid var(--border);display:inline-flex;gap:7px;align-items:center}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--live)}.pill.learning i{background:var(--accent)}
+/* featured */
+.feat{padding:clamp(20px,4vw,44px);border-color:rgba(139,124,255,.35);box-shadow:0 0 60px rgba(110,70,255,.14)}
+.fgrid{display:grid;gap:32px;grid-template-columns:1fr}
+.feat h3{font-size:clamp(26px,3.6vw,38px);margin:8px 0 14px}
+.sub{margin-top:22px}.sub h4{font:500 12px var(--m);color:var(--accent);margin:0 0 6px;letter-spacing:.06em}
+.feat ul{margin:0;padding-left:18px;color:var(--muted)}
+.badge{font:12px var(--m);padding:4px 10px;border:1px dashed rgba(139,124,255,.5);border-radius:6px;color:var(--text)}
+.chat{background:rgba(14,14,23,.9);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:10px;align-content:start}
+.langs{display:flex;gap:6px;flex-wrap:wrap}.langs span{font:11px var(--m);border:1px solid var(--border);border-radius:99px;padding:3px 10px;color:var(--muted)}.langs span:first-child{color:var(--text);border-color:var(--accent)}
+.info{border:1px solid rgba(139,124,255,.25);background:rgba(139,124,255,.07);border-radius:8px;padding:10px 12px;font-size:12px}
+.disc{margin-top:26px;padding:14px 16px;border-left:2px solid var(--accent);background:var(--surface);font-size:13px;border-radius:0 8px 8px 0}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-10px 0 24px}
+.f{font:12px var(--m);background:none;color:var(--muted);border:1px solid var(--border);border-radius:99px;padding:7px 14px;cursor:pointer}
+.f[aria-pressed=true]{color:var(--text);border-color:var(--accent);background:rgba(139,124,255,.14)}
+.pg{display:grid;gap:18px;grid-template-columns:1fr}
+.pc[hidden]{display:none}.pc p{margin:8px 0 14px;font-size:14px}.pc .mono{color:var(--muted)}
+/* timeline */
+.tl{position:relative;padding-left:34px;max-width:680px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--accent),transparent)}
+.ti{position:relative;padding-bottom:34px}
+.ti::before{content:"";position:absolute;left:-33px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);box-shadow:0 0 12px var(--accent)}
+.ti h3{font-size:20px;margin-bottom:6px}
+/* beyond */
+.four{display:grid;gap:18px;grid-template-columns:1fr}
+.four svg{width:34px;height:34px;stroke:var(--accent);fill:none;stroke-width:1.5}
+.four h3{font-size:18px;margin:12px 0 6px}
+/* contact */
+.cg{display:grid;gap:36px;grid-template-columns:1fr}
+form{display:grid;gap:14px;padding:22px}
+label{font:12px var(--m);color:var(--muted);display:grid;gap:6px}
+input,textarea{font:15px var(--b);color:var(--text);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:11px 12px;width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.err{color:var(--alert);font-size:12px;min-height:0}
+.hp{position:absolute;left:-9999px}
+#status{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:36px 0 44px;font-size:14px}
+.ft{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-start}
+.ft ul{display:flex;gap:16px;flex-wrap:wrap;list-style:none;margin:0;padding:0;color:var(--muted)}
+.ft a:hover{color:var(--text)}
+/* reveal (page-level, single mechanism) */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(min-width:768px){.hgrid{grid-template-columns:1.4fr 1fr;align-items:end}.three,.pg{grid-template-columns:repeat(3,1fr)}.sg,.four{grid-template-columns:repeat(2,1fr)}.cg{grid-template-columns:1fr 1.1fr}}
+@media(min-width:1024px){.sg,.four{grid-template-columns:repeat(4,1fr)}.fgrid{grid-template-columns:1.2fr 1fr}}
+@media(max-width:860px){.burger{display:block}.chip{display:none}
+nav ul{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:rgba(7,7,12,.97);border-bottom:1px solid var(--border);padding:8px 20px;display:none}
+nav ul.open{display:flex}nav ul a{display:block;padding:12px 0}}
+@media(max-width:767px){.fl{position:static;width:auto;margin-top:12px;animation:none}.stage{padding-bottom:0}.btn.full{width:100%;justify-content:center}}
+#glow{position:fixed;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,rgba(139,124,255,.14),transparent 65%);pointer-events:none;z-index:0;display:none}
+@media(hover:hover) and (pointer:fine){#glow{display:block}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.line{transform:none}#glow{display:none!important}}
+</style>
+</head>
+<body>
+<div id="glow" aria-hidden="true"></div>
+<header>
+<div class="wrap nav">
+<a href="#home" class="logo"><span class="orb"></span>SWETHA.E</a>
+<nav aria-label="Main"><ul id="menu">
+<li><a class="l" href="#home">Home</a></li><li><a class="l" href="#about">About</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#journey">Journey</a></li><li><a class="l" href="#contact">Contact</a></li></ul></nav>
+<div class="right"><span class="chip"><span class="dot"></span>AI/DS STUDENT</span><a class="btn w" href="#contact">Contact Me</a>
+<button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+<p class="mono">HELLO, WORLD! / WELCOME TO MY DIGITAL SPACE</p>
+<div class="hgrid" style="margin-top:22px">
+<h1><span class="g1">Hi, I’m Swetha E.</span><span class="g2">Exploring Intelligence. Engineering Possibilities.</span></h1>
+<div class="side"><p>I’m an Artificial Intelligence and Data Science student at Panimalar Engineering College, passionate about exploring intelligent systems, solving meaningful problems, and building technology-driven experiences.</p>
+<div class="cta"><a class="btn" href="#projects">Explore My Projects →</a><a class="txt" href="#about">About Me ↗</a><a class="txt" href="#contact">Contact Me ↗</a></div></div>
+</div>
+<div class="stage" id="stage">
+<div class="win"><div class="wbar"><span class="dot r"></span>SWETHA / legal_assistant / session<b>↗ SHARE</b></div>
+<div class="wbody"><div class="tiles"><div class="tile">[Language 1]</div><div class="tile">[Language 2]</div><div class="tile">[Language 3]</div></div>
+<div class="insight"><span class="mono" style="font-size:10px">● AI INSIGHT / ILLUSTRATIVE</span><div class="bub u">How do I find a cooperative society’s bylaws?</div><div class="bub a">Here are the resources that may help. Please verify them with an official source.</div></div>
+<div class="tags"><span>#multilingual</span><span>#governance</span><span>#nlp</span><span>#accessibility</span></div></div></div>
+<div class="fl a" data-d="14"><span class="mono">CONCEPT</span>“Information should be easy to reach, in any language.”</div>
+<div class="fl b" data-d="-18"><span class="mono"><span class="dot"></span> LIVE</span><p>ROLE: AI &amp; DATA SCIENCE STUDENT<br>FOCUS: INTELLIGENT TECHNOLOGIES<br>PROJECT: MULTILINGUAL LEGAL ASSISTANCE<br>STATUS: LEARNING AND BUILDING</p></div>
+<div class="fl c" data-d="10"><span class="mono">PATTERN DETECTED</span>AI · DATA · INNOVATION · CODE</div>
+</div>
+<a class="down" href="#about">scroll ↓</a>
+</div></section>
+
+<section id="about"><div class="wrap rv">
+<p class="mono">ABOUT</p><h2>Curiosity drives me. Technology empowers me.</h2>
+<p class="lead">I’m Swetha E, currently pursuing a B.Tech in Artificial Intelligence and Data Science at Panimalar Engineering College. I enjoy exploring how intelligent systems can solve real-world problems and make information and services more accessible. Through my project work, I’m developing my understanding of AI-driven applications, user-focused design, and practical problem-solving. I’m continuously learning, experimenting with ideas, and working toward building meaningful technology solutions.</p>
+<div class="line" style="margin-top:40px"></div>
+<div class="three" style="margin-top:0;padding-top:18px">
+<div class="card glass"><span class="mono">MY INTERESTS</span><h3>What pulls me in</h3><p>Artificial Intelligence, Data Science, Intelligent Applications, and Emerging Technologies.</p></div>
+<div class="card glass"><span class="mono">MY APPROACH</span><h3>How I work</h3><p>Learn continuously, experiment thoughtfully, solve problems, and build user-focused solutions.</p></div>
+<div class="card glass"><span class="mono">MY VISION</span><h3>Where I’m headed</h3><p>Develop responsible, useful, and accessible technology that creates meaningful impact.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap rv">
+<p class="mono">SKILLS</p><h2>My toolkit for turning ideas into reality.</h2>
+<div class="legend"><span><span class="dot"></span> Comfortable</span><span><span class="dot" style="background:var(--accent);box-shadow:none"></span> Learning</span></div>
+<div class="sg" id="skillGrid"></div></div></section>
+
+<section id="featured"><div class="wrap rv">
+<p class="mono">SELECTED WORK</p><h2>Turning ideas into useful applications.</h2>
+<article class="feat glass"><div class="fgrid"><div>
+<p class="mono">AI / NLP / CONVERSATIONAL APPLICATION</p>
+<h3>Multilingual Cooperative Governance &amp; Legal Assistance Chatbot</h3>
+<p>A chatbot project focused on multilingual assistance for cooperative governance and legal information. The concept is to make relevant information easier to access through a conversational interface and help users navigate governance-related questions across language barriers.</p>
+<div class="sub"><h4>THE PROBLEM</h4><p>People may encounter language barriers or difficulty navigating governance-related information and legal resources. A conversational interface can help make information easier to find and understand.</p></div>
+<div class="sub"><h4>THE SOLUTION</h4><p>A multilingual assistance interface designed to support users seeking cooperative governance and legal information.</p></div>
+<div class="sub"><h4>KEY OBJECTIVES</h4><ul><li>Improve accessibility to information across supported languages.</li><li>Make governance-related information easier to explore.</li><li>Provide a user-friendly conversational experience.</li><li>Help users identify relevant legal or governance resources.</li></ul></div>
+<div class="sub"><h4>TECHNOLOGY STACK</h4><div class="tags" id="stack"></div></div>
+<div class="sub"><h4>MY CONTRIBUTION</h4><p id="contrib"></p></div>
+<div class="links" id="plinks"></div></div>
+<div class="chat" role="img" aria-label="Illustration of the chatbot interface with a language selector and conversation bubbles">
+<div class="langs"><span>[Language 1]</span><span>[Language 2]</span><span>[Language 3]</span></div>
+<div class="bub u">What is a general body meeting?</div><div class="bub a">A general body meeting is where members of a cooperative society discuss and vote on key matters.</div>
+<div class="info"><span class="mono" style="font-size:10px">RESOURCE CARD</span><br>[Governance resource title]</div>
+<div class="info"><span class="mono" style="font-size:10px">RESOURCE CARD</span><br>[Legal resource title]</div></div>
+</div>
+<p class="disc">This project is intended to assist users in finding and understanding information. It does not replace qualified legal advice. Responses and referenced resources should be verified.</p></article></div></section>
+
+<section id="projects"><div class="wrap rv">
+<p class="mono">EXPERIMENTS</p><h2>More ideas. More things to build.</h2>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="f" data-f="all" aria-pressed="true">All</button><button class="f" data-f="ai" aria-pressed="false">AI/ML</button><button class="f" data-f="ds" aria-pressed="false">Data Science</button><button class="f" data-f="web" aria-pressed="false">Web Development</button></div>
+<div class="pg">
+<article class="pc card glass" data-c="ai"><span class="mono">PROJECT 01 · AI/ML · COMING SOON</span><h3>[Future AI/ML Project]</h3><p>[Short description of the project goes here.]</p><div class="tags"><span>[Tech]</span></div><div class="links"><a class="btn" href="#contact">Repository: add link</a></div></article>
+<article class="pc card glass" data-c="ds"><span class="mono">PROJECT 02 · DATA SCIENCE · COMING SOON</span><h3>[Data Science Project]</h3><p>[Short description of the project goes here.]</p><div class="tags"><span>[Tech]</span></div><div class="links"><a class="btn" href="#contact">Repository: add link</a></div></article>
+<article class="pc card glass" data-c="web"><span class="mono">PROJECT 03 · WEB DEVELOPMENT · COMING SOON</span><h3>[Creative Web Development Project]</h3><p>[Short description of the project goes here.]</p><div class="tags"><span>[Tech]</span></div><div class="links"><a class="btn" href="#contact">Repository: add link</a></div></article>
+</div></div></section>
+
+<section id="journey"><div class="wrap rv">
+<p class="mono">JOURNEY</p><h2>Every step is part of the process.</h2>
+<div class="tl">
+<div class="ti"><h3>Academic Journey</h3><p>B.Tech in Artificial Intelligence and Data Science at Panimalar Engineering College.</p></div>
+<div class="ti"><h3>Project Development</h3><p>Worked on the Multilingual Cooperative Governance &amp; Legal Assistance Chatbot.</p></div>
+<div class="ti"><h3>Continuous Learning</h3><p>Exploring programming, AI concepts, data science, and application development.</p></div>
+<div class="ti"><h3>What’s Next</h3><p>Continue developing projects, improving technical skills, collaborating with others, and exploring opportunities to apply AI to real-world problems.</p></div>
+</div></div></section>
+
+<section id="beyond"><div class="wrap rv">
+<p class="mono">BEYOND THE CODE</p><h2>Technology is my medium. Curiosity is my starting point.</h2>
+<div class="four">
+<div class="card glass"><svg viewBox="0 0 32 32"><path d="M6 16h6l3-8 4 16 3-8h4"/></svg><h3>Problem Solver</h3><p>Breaks big questions into small, testable steps.</p></div>
+<div class="card glass"><svg viewBox="0 0 32 32"><path d="M4 8l12-4 12 4-12 4zM8 11v8c4 4 12 4 16 0v-8"/></svg><h3>Lifelong Learner</h3><p>Keeps exploring new tools and ideas.</p></div>
+<div class="card glass"><svg viewBox="0 0 32 32"><circle cx="16" cy="14" r="8"/><path d="M12 24h8M13 28h6"/></svg><h3>Creative Thinker</h3><p>Looks for fresh ways to approach familiar problems.</p></div>
+<div class="card glass"><svg viewBox="0 0 32 32"><path d="M16 4l3 8h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z"/></svg><h3>Impact-Oriented Builder</h3><p>Builds technology that is useful and accessible.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap rv">
+<p class="mono">LET’S CONNECT</p><h2>Have an idea? Let’s make it happen.</h2>
+<div class="cg"><div><p class="lead">I’m always interested in learning, exploring new ideas, and connecting with people who enjoy building meaningful technology.</p>
+<div class="links" id="clinks"></div></div>
+<form class="glass" id="form" novalidate>
+<label>Name<input id="n" autocomplete="name"><span class="err" id="en"></span></label>
+<label>Email<input id="e" type="email" autocomplete="email"><span class="err" id="ee"></span></label>
+<label>Subject<input id="s"><span class="err" id="es"></span></label>
+<label>Message<textarea id="m" rows="5"></textarea><span class="err" id="em"></span></label>
+<input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn w full" type="submit">Open in my email app</button>
+<p id="status" role="status"></p></form></div></div></section>
+</main>
+<footer><div class="wrap ft">
+<div><p style="color:var(--text)">Designed and built with curiosity by Swetha E.</p><p>Exploring the intersection of intelligence, data, and creativity.</p><p>© <span id="yr"></span> Swetha E</p></div>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul>
+<ul id="flinks"></ul>
+<a class="btn" href="#home" aria-label="Back to top">↑ Back to top</a></div></footer>
+
+<script>
+/* ===== CONFIG: edit your details here ===== */
+const CONFIG={
+ email:"ettiyappanswetha@gmail.com",
+ github:"https://github.com/Eswethaettiyappan1201",
+ linkedin:"https://www.linkedin.com/in/swetha-ettiyappan-52b932329/",
+ resume:"",            // e.g. "assets/resume.pdf" (button hidden if empty)
+ formEndpoint:"",      // optional Formspree URL; empty = mailto fallback
+ project:{source:"",demo:"",details:""}, // empty URL = button hidden
+ stack:["[Language]","[Framework]","[NLP model / API]"], // replace with what you really used
+ contribution:"[Describe your actual responsibilities, design decisions and learning outcomes]",
+ /* level: "comfortable" or "learning". Delete any skill you don't know. */
+ skills:[
+  {t:"Programming",i:"M8 9l-5 7 5 7M24 9l5 7-5 7M18 6l-4 20",s:[["Python","learning"],["Java","learning"],["C","learning"],["C++","learning"]]},
+  {t:"AI & Data Science",i:"M16 4a6 6 0 00-6 6 6 6 0 00-4 6 6 6 0 004 6 6 6 0 0012 0 6 6 0 004-6 6 6 0 00-4-6 6 6 0 00-6-6zM16 4v22",s:[["Artificial Intelligence","learning"],["Machine Learning","learning"],["Data Analysis","learning"],["Natural Language Processing","learning"]]},
+  {t:"Web Development",i:"M4 6h24v20H4zM4 12h24",s:[["HTML","learning"],["CSS","learning"],["JavaScript","learning"],["Responsive Web Design","learning"]]},
+  {t:"Tools & Platforms",i:"M20 6a6 6 0 00-6 8L4 24l4 4 10-10a6 6 0 008-6l-4 4-4-4z",s:[["Git","learning"],["GitHub","learning"],["Visual Studio Code","learning"]]}]
+};
+/* ===== helpers ===== */
+const $=(q,r=document)=>r.querySelector(q),$$=(q,r=document)=>[...r.querySelectorAll(q)];
+const mk=(h,u,txt,cls="btn")=>`<a class="${cls}" href="${h}" ${h.startsWith("http")?'target="_blank" rel="noopener noreferrer"':""}>${txt}</a>`;
+/* render config */
+$("#skillGrid").innerHTML=CONFIG.skills.map(c=>`<div class="card glass"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="${c.i}"/></svg><h3>${c.t}</h3><div class="pills">${c.s.map(([n,l])=>`<span class="pill ${l}"><i></i>${n}</span>`).join("")}</div></div>`).join("");
+$("#stack").innerHTML=CONFIG.stack.map(s=>`<span class="badge">${s}</span>`).join("");
+$("#contrib").textContent=CONFIG.contribution;
+const P=CONFIG.project;
+$("#plinks").innerHTML=[[P.source,"View Source Code"],[P.demo,"Live Demo"],[P.details,"Read Project Details"]].filter(x=>x[0]).map(x=>mk(x[0],0,x[1]+" ↗")).join("")||'<p class="mono" style="color:var(--muted)">Project links appear here once you add URLs in CONFIG.</p>';
+$("#clinks").innerHTML=mk("mailto:"+CONFIG.email,0,"Email","btn w")+mk(CONFIG.linkedin,0,"LinkedIn ↗")+mk(CONFIG.github,0,"GitHub ↗")+(CONFIG.resume?mk(CONFIG.resume,0,"Download resume"):"");
+$("#flinks").innerHTML=`<li>${mk(CONFIG.github,0,"GitHub","")}</li><li>${mk(CONFIG.linkedin,0,"LinkedIn","")}</li>`;
+$("#yr").textContent=new Date().getFullYear();
+/* mobile menu */
+const menu=$("#menu"),bg=$("#burger");
+bg.onclick=()=>{const o=menu.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"};
+$$("#menu a").forEach(a=>a.onclick=()=>{menu.classList.remove("open");bg.setAttribute("aria-expanded",false);bg.textContent="☰"});
+/* reveal + active nav */
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("in")),{threshold:.12});
+$$(".rv").forEach(el=>io.observe(el));
+const links=$$("nav a.l"),secs=["home","about","skills","projects","journey","contact"].map(id=>document.getElementById(id));
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(s=>so.observe(s));
+/* project filters */
+$$(".f").forEach(b=>b.onclick=()=>{$$(".f").forEach(x=>x.setAttribute("aria-pressed",x===b));$$(".pc").forEach(c=>c.hidden=b.dataset.f!=="all"&&c.dataset.c!==b.dataset.f)});
+/* cursor glow + hero parallax (desktop, motion allowed) */
+if(matchMedia("(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference)").matches){
+ const g=$("#glow");addEventListener("pointermove",e=>{g.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;
+ const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;$$(".fl").forEach(f=>f.style.transform=`translate(${x*f.dataset.d}px,${y*f.dataset.d}px)`)})}
+/* contact form: validate, then mailto or Formspree. Never claims "sent" for mailto. */
+const f=$("#form"),st=$("#status");
+f.onsubmit=async ev=>{ev.preventDefault();if($("#hp").value)return;
+ const v={n:$("#n").value.trim(),e:$("#e").value.trim(),s:$("#s").value.trim(),m:$("#m").value.trim()};
+ const er={n:v.n?"":"Enter your name.",e:/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.e)?"":"Enter a valid email address.",s:v.s?"":"Enter a subject.",m:v.m.length>=10?"":"Write a message of at least 10 characters."};
+ let bad=false;for(const k in er){$("#e"+k).textContent=er[k];if(er[k])bad=true}
+ if(bad){st.textContent="Fix the highlighted fields and try again.";st.style.color="var(--alert)";return}
+ if(CONFIG.formEndpoint){try{const r=await fetch(CONFIG.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({name:v.n,email:v.e,subject:v.s,message:v.m})});
+  if(!r.ok)throw 0;f.reset();st.textContent="Message sent. Thank you!";st.style.color="var(--live)"}catch{st.textContent="The message could not be sent. Email me directly at "+CONFIG.email+".";st.style.color="var(--alert)"}return}
+ location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent(v.s)}&body=${encodeURIComponent(v.m+"\n\n— "+v.n+" ("+v.e+")")}`;
+ st.textContent="Your email app should open with the message ready. Press send there to deliver it.";st.style.color="var(--muted)"};
+</script>
+</body>
+</html>
